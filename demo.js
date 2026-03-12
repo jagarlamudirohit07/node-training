@@ -39,6 +39,12 @@ const express = require('express')
         
      })
 
+         app.get('/saygoodbye',(req, res)=>{
+        console.log(" incoming request")
+        res.send("ok, byee!")
+        
+     })
+
      app.post('/saybye', (req, res)=>{
         console.log("post route")
         res.send('post route')
